@@ -200,3 +200,40 @@ nav{
 
 
 /* ============ Footer =============== */
+footer{
+    background: var(--Dark-Blue);
+}
+
+footer .section{
+    padding: 3rem 0;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__socials, .footer_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social-links{
+    display: flex;
+    gap: 0.75rem;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.footer-links a{
+    color: var(--White);
+    text-decoration: none;
+}
+
+.copyright{
+    color: var(--Grayish-Blue);
+}
+
