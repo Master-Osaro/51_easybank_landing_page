@@ -63,6 +63,7 @@ header, .section{
 nav, .container{
     max-width: 1200px;
     width: 100%;
+    padding: 0 1rem;
 }
 
 nav{
@@ -150,7 +151,8 @@ nav{
 
 .section__wcu-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
 }
 .section__wcu-item{
     display: flex;
@@ -160,3 +162,41 @@ nav{
 
 
 /* ============ Articles =============== */
+.section__articles{
+    background: var(--Very-Light-Gray);
+}
+.articles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.article{
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.article, .article--content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--White);
+}
+
+.article img{
+    width: 100%;
+    height: 187px;
+}
+
+.article--content{
+    padding: 2rem;
+}
+
+.article h5{
+    font-size: 0.7rem;
+}
+.article p{
+    font-size: 0.95rem;
+}
+
+
+/* ============ Footer =============== */
