@@ -62,11 +62,10 @@ header, .section{
 
 nav, .container{
     max-width: 1200px;
-    padding: 0 1rem;
+    width: 100%;
 }
 
 nav{
-    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
@@ -83,8 +82,16 @@ nav{
 }
 
 .section:not(:first-child){
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
+
+.section h2{
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+}
+
+
+/* ============ Hero Section =========== */
 .section__hero{
     background: var(--Very-Light-Gray);
     max-height: 600px;
@@ -128,3 +135,28 @@ nav{
     width: fit-content;
 }
 
+
+
+/* ============ Why Chose Us =============== */
+.section__wcu{
+    background: var(--Light-Grayish-Blue);
+}
+.section__wcu--copy{
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-bottom: 4.5rem;
+}
+
+.section__wcu-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.section__wcu-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+
+/* ============ Articles =============== */
