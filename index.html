@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
   
   <title> Easybank landing page | Frontend Mentor</title>
 </head>
@@ -20,26 +21,28 @@
       <a href="" class="nav-link">Careers</a>
     </div>
     <div class="btn__wrapper">
-      <input type="button" value="Request Invite">
+      <input type="button" class="btn btn-primary" value="Request Invite">
     </div>
   </nav>
 </header>
 <main>
   <section class="section section__hero">
-    <div class="section__hero-text">
-      <h1>Next generation digital banking</h1>
-      <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
-        for spending, saving, budgeting, investing, and much more.</p>
-      <button>Request Invite</button>
+    <div class="container">
+      <div class="section__hero-text">
+        <h1>Next generation digital banking</h1>
+        <p>Take your financial life online. Your Easybank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing, and much more.</p>
+        <button>Request Invite</button>
+      </div>
+      <div class="section__hero-img"></div>
     </div>
-    <div class="section__hero-img"></div>
   </section>
   <section class="section section__wcu">
+    <div class="container">
       <h2>Why choose Easybank?</h2>
       <p>We leverage Open Banking to turn your bank account into your financial hub. Control 
         your finances like never before.</p>
         <div class="section__wcu-items">
-
           <div class="section__wcu-item">
             <img src="./images/icon-online.svg" alt="">
             <h3>Online Banking</h3>
@@ -63,11 +66,11 @@
             <p> Manage your savings, investments, pension, and much more from one account. Tracking 
               your money has never been easier.</p>
           </div>
-
         </div>
-      
+    </div>
   </section>
   <section class="section section__articles">
+    <div class="container">
     <h2>Latest Articles</h2>
       <div class="articles">
 
@@ -104,7 +107,7 @@
         </div>
 
       </div>
-    
+    </div>
 </section>
 </main>
 <footer>

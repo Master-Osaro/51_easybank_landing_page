@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    /* ### Neutral */
+
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --Font-size: 18px;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background: linear-gradient(to right, var(--Lime-Green),var(--Bright-Cyan));
+    color: var(--White);
+}
+
+header, .section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav, .container{
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    gap: 2rem;
+}
+.nav-link{
+    text-decoration: none;
+}
+
