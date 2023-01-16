@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5{
     background: linear-gradient(to right, var(--Lime-Green),var(--Bright-Cyan));
     color: var(--White);
 }
+.btn-primary:hover{
+    background: linear-gradient(to right, var(--Lime-Green) 70%,var(--Bright-Cyan));
+    color: var(--White);
+}
 
 header{
     position: relative;
@@ -77,8 +81,6 @@ nav, .container{
 nav{
     display: flex;
     justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     align-items: center;
 }
 
@@ -89,6 +91,14 @@ nav{
 .nav-link{
     text-decoration: none;
     color: var(--Grayish-Blue);
+    display: block;
+    padding: 2rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all .3s;
+    
+}
+.nav-link:hover{
+    border-bottom: 2px solid var(--Lime-Green);
 }
 
 .section:not(:first-child){
@@ -212,6 +222,13 @@ nav{
 .article h5{
     font-size: 0.7rem;
 }
+.article h4{
+    transition: all .4s;
+}
+.article h4:hover{
+    color: var(--Lime-Green);
+    cursor: pointer;
+}
 .article p{
     font-size: 0.95rem;
 }
@@ -249,6 +266,10 @@ footer .container{
 .footer-links a{
     color: var(--White);
     text-decoration: none;
+    transition: all .3s;
+}
+.footer-links a:hover{
+    color: var(--Lime-Green);
 }
 
 .copyright{
