@@ -13,16 +13,25 @@
 <header>
   <nav>
     <div class="logo"><img src="./images/logo.svg" alt=""></div>
-    <div class="nav-list">
-      <a href="" class="nav-link">Home</a>
-      <a href="" class="nav-link">About</a>
-      <a href="" class="nav-link">Contact</a>
-      <a href="" class="nav-link">Blog</a>
-      <a href="" class="nav-link">Careers</a>
+    <input type="checkbox" name="" id="mobile-menu__checkbox">
+    <label for="mobile-menu__checkbox" class="mobile-menu">
+      <button aria-controls="responsive-navbar-nav" aria-label="Toggle navigation" class="nav__ham-menu"></button>
+    </label>
+    
+    <div class="nav-list__container">
+      <div class="nav-list">
+        <a href="" class="nav-link">Home</a>
+        <a href="" class="nav-link">About</a>
+        <a href="" class="nav-link">Contact</a>
+        <a href="" class="nav-link">Blog</a>
+        <a href="" class="nav-link">Careers</a>
+      </div>
+      <div class="btn__wrapper">
+        <input type="button" class="btn btn-primary" value="Request Invite">
+      </div>
     </div>
-    <div class="btn__wrapper">
-      <input type="button" class="btn btn-primary" value="Request Invite">
-    </div>
+    
+    
   </nav>
 </header>
 <main>
@@ -37,8 +46,7 @@
       <div class="section__hero-img">
         <img src="./images/image-mockups.png" alt="image mockups">
         <picture>
-          <source media="(min-width: 720px)" srcset="./images/bg-intro-desktop.svg">
-          <source media="(max-width: 719px)" srcset="./images/bg-intro-mobile.svg">
+          <source srcset="./images/bg-intro-mobile.svg" media="(max-width: 740px)" class="source-img"/>
           <img src="./images/bg-intro-desktop.svg" alt="image mockups">
         </picture>
         
@@ -136,6 +144,7 @@
     </div>
 </section>
 </main>
+
 <footer>
   <div class="section">
     <div class="container">
@@ -167,5 +176,17 @@
   </div>
   
 </footer>
+<script>
+  
+  let status = false;
+    let checkbox = document.querySelector('#mobile-menu__checkbox');
+    document.querySelector('.nav__ham-menu').addEventListener('click', (e)=>{
+      e.preventDefault();
+      status=!status;
+      checkbox.checked=status;
+    })
+    
+  
+</script>
 </body>
 </html>
